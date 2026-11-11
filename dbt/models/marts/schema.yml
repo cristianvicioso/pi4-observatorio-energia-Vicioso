@@ -195,8 +195,8 @@ models:
 
   - name: fact_clima_diario
     description: >
-      GRANO: una fila por FECHA x ESTACION del IDEAM en Antioquia, 2023-01-01 a
-      2026-09-30. Medidas: precipitacion (mm) y temperatura media, minima y maxima (C).
+      GRANO: una fila por FECHA x ESTACION del IDEAM en Antioquia, 2023-01-01 a 2026-07-31 (el IDEAM
+      no tiene datos posteriores). Medidas: precipitacion (mm) y temperatura media, minima y maxima (C).
     data_tests:
       - grano_unico:
           arguments:
