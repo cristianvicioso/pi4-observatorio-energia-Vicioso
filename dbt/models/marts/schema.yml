@@ -1,61 +1,81 @@
-# Pruebas de dbt sobre la capa oro. "dbt build" las ejecuta despues de crear cada tabla.
-# Es un archivo YAML: no se ejecuta; dbt lo lee para saber que probar en cada tabla.
-
-
-# La version del formato de este archivo (dbt pide 2)
+# Capa ORO: esquema estrella del Observatorio de Energia y Clima.
+# "dbt build" crea cada tabla y luego ejecuta sus pruebas:
+#   - dimensiones: unique + not_null en la llave
+#   - hechos: not_null + relationships en cada llave foranea y grano_unico en el grano
+# La prueba grano_unico esta en dbt/tests/generic/grano_unico.sql.
 version: 2
 
-
-# La lista de modelos (tablas) y sus pruebas
 models:
-  # La tabla dim_mes
-  - name: dim_mes
-    # Una descripcion corta de la tabla (sale en la documentacion de dbt)
-    description: "Un mes con ventas."
-    # Las columnas que se prueban
+  # =========================================================================
+  # DIMENSIONES
+  # =========================================================================
+  - name: dim_fecha
+    description: >
+      Un dia del calendario, del 2023-01-01 al 2026-12-31, con su mes, trimestre,
+      dia de la semana y la fase ENSO del mes (ONI de NOAA asignado a su mes central).
     columns:
-      # La columna mes_id (la llave)
-      - name: mes_id
-        # unique: no se repite; not_null: nunca esta vacia
+      - name: fecha_id
+        description: "Llave: la fecha como entero AAAAMMDD (20240315)."
         data_tests: [unique, not_null]
+      - name: fecha
+        data_tests: [unique, not_null]
+      - name: trimestre
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4]
+      - name: dia_semana
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5, 6, 7]
+      - name: fase_enso
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["El Niño", "La Niña", "Neutral", "Sin dato"]
 
-
-  # La tabla dim_municipio
   - name: dim_municipio
-    description: "Un municipio de Antioquia con su codigo DIVIPOLA."
+    description: "Un municipio de Antioquia con su codigo DIVIPOLA (DANE)."
     columns:
-      # La llave: no se repite y nunca esta vacia
       - name: municipio_id
+        description: "Llave: codigo DIVIPOLA de 5 digitos (05001 = Medellin)."
         data_tests: [unique, not_null]
+      - name: municipio
+        data_tests: [not_null]
 
-
-  # La tabla dim_segmento
   - name: dim_segmento
-    description: "Un segmento de cliente."
+    description: "Un segmento de cliente de EnerAndes."
     columns:
-      # La llave: no se repite y nunca esta vacia
       - name: segmento_id
         data_tests: [unique, not_null]
-
-
-  # La tabla de hechos
-  - name: fact_ventas_mensual
-    description: "Ventas de energia por mes, municipio, segmento y tipo de compra."
-    columns:
-      # La llave al mes
-      - name: mes_id
+      - name: segmento
         data_tests:
-          # Nunca esta vacia
-          - not_null
-          # relationships: cada mes_id del hecho debe existir en dim_mes
-          # (si no, seria una venta de un mes que no esta en la dimension)
-          - relationships:
+          - unique
+          - accepted_values:
               arguments:
-                # La tabla con la que se compara
-                to: ref('dim_mes')
-                # La columna de esa tabla
-                field: mes_id
-      # La llave al municipio: nunca vacia y debe existir en dim_municipio
+                values: ["Residencial", "Comercial", "Industrial", "No informado"]
+
+  - name: dim_recurso
+    description: >
+      Una planta (recurso) de generacion del SIN, a partir de ListadoRecursos de XM.
+      Las plantas que generan pero no estan en el catalogo aparecen con en_catalogo = false.
+    columns:
+      - name: recurso_id
+        description: "Llave: codigo del recurso en XM."
+        data_tests: [unique, not_null]
+      - name: tipo_generacion
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["HIDRAULICA", "TERMICA", "SOLAR", "EOLICA", "COGENERADOR", "NO INFORMADO"]
+
+  - name: dim_estacion
+    description: "Una estacion meteorologica del IDEAM en Antioquia, con su municipio."
+    columns:
+      - name: estacion_id
+        data_tests: [unique, not_null]
       - name: municipio_id
         data_tests:
           - not_null
@@ -63,7 +83,35 @@ models:
               arguments:
                 to: ref('dim_municipio')
                 field: municipio_id
-      # La llave al segmento: nunca vacia y debe existir en dim_segmento
+
+  # =========================================================================
+  # HECHOS
+  # =========================================================================
+  - name: fact_ventas_mensual
+    description: >
+      GRANO: una fila por MES x MUNICIPIO x SEGMENTO x TIPO DE COMPRA de las ventas
+      de EnerAndes, de 2023-01 a 2026-09 (las 4 hojas del Excel). El mes se une a
+      dim_fecha por su primer dia. Medidas: energia vendida (kWh), valor facturado (COP)
+      y clientes.
+    data_tests:
+      - grano_unico:
+          arguments:
+            columnas: [fecha_id, municipio_id, segmento_id, tipo_compra]
+    columns:
+      - name: fecha_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_id
+      - name: municipio_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: municipio_id
       - name: segmento_id
         data_tests:
           - not_null
@@ -71,10 +119,107 @@ models:
               arguments:
                 to: ref('dim_segmento')
                 field: segmento_id
-      # El tipo de compra
       - name: tipo_compra
         data_tests:
-          # accepted_values: solo se aceptan los valores de esta lista
+          - not_null
           - accepted_values:
               arguments:
                 values: ["Bolsa", "Contrato"]
+      - name: energia_kwh
+        data_tests: [not_null]
+
+  - name: fact_mercado_horario
+    description: >
+      GRANO: una fila por FECHA x HORA del Sistema Interconectado Nacional
+      (2023-01-01 a 2026-09-30). Medidas: precio de bolsa nacional (COP/kWh y USD/MWh),
+      demanda comercial (kWh) y TRM del dia.
+    data_tests:
+      - grano_unico:
+          arguments:
+            columnas: [fecha_id, hora]
+    columns:
+      - name: fecha_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_id
+      - name: hora
+        data_tests: [not_null]
+      - name: precio_bolsa_cop_kwh
+        data_tests: [not_null]
+
+  - name: fact_generacion_recurso
+    description: >
+      GRANO: una fila por FECHA x HORA x PLANTA (recurso de generacion de XM) con
+      generacion reportada, 2023-01-01 a 2026-09-30. Medida: generacion real (kWh).
+    data_tests:
+      - grano_unico:
+          arguments:
+            columnas: [fecha_id, hora, recurso_id]
+    columns:
+      - name: fecha_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_id
+      - name: recurso_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_recurso')
+                field: recurso_id
+      - name: hora
+        data_tests: [not_null]
+
+  - name: fact_hidrologia_diaria
+    description: >
+      GRANO: una fila por FECHA para todo el SIN. Medidas: volumen util total de los
+      embalses (kWh) y aportes hidricos totales de los rios (kWh).
+    data_tests:
+      - grano_unico:
+          arguments:
+            columnas: [fecha_id]
+    columns:
+      - name: fecha_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_id
+
+  - name: fact_clima_diario
+    description: >
+      GRANO: una fila por FECHA x ESTACION del IDEAM en Antioquia, 2023-01-01 a
+      2026-09-30. Medidas: precipitacion (mm) y temperatura media, minima y maxima (C).
+    data_tests:
+      - grano_unico:
+          arguments:
+            columnas: [fecha_id, estacion_id]
+    columns:
+      - name: fecha_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_fecha')
+                field: fecha_id
+      - name: estacion_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_estacion')
+                field: estacion_id
+      - name: municipio_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: municipio_id

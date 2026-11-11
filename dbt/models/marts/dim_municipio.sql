@@ -1,11 +1,10 @@
--- Dimension MUNICIPIO: una fila por municipio, con su codigo DIVIPOLA.
--- Grano: un municipio.
-
--- select distinct = sin repetir: cada municipio aparece una sola vez (15 filas)
-select distinct
-    -- La llave: el codigo DANE de 5 digitos ('05001'), con el nombre municipio_id
-    divipola    as municipio_id,
-    -- El nombre oficial del municipio
-    municipio
--- De donde: el modelo stg_ventas
-from {{ ref('stg_ventas') }}
+-- dim_municipio: los 125 municipios de Antioquia (DIVIPOLA del DANE).
+-- atendido_enerandes marca los 15 donde EnerAndes vende energia.
+select
+    divipola            as municipio_id,
+    municipio,
+    departamento,
+    latitud,
+    longitud,
+    atendido_enerandes
+from {{ ref('stg_municipios') }}
