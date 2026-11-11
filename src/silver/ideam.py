@@ -121,6 +121,14 @@ def limpiar_medicion(bronce: pd.DataFrame, tipo: str, municipios: pd.DataFrame,
     repetida = df.duplicated(subset=["fecha", "codigo_estacion"], keep=False)
     m.medir(f"{tipo}: mismo dia y estacion en varias filas (cambio de nombre o coordenadas)",
             "Consolidar en una fila por dia y estacion", int(repetida.sum()), 0)
+    # Cobertura: meses del periodo del observatorio sin ninguna medicion
+    meses = pd.period_range("2023-01", "2026-09", freq="M").astype(str)
+    con_datos = set(df["fecha"].dt.strftime("%Y-%m"))
+    sin_datos = [mes for mes in meses if mes not in con_datos]
+    m.medir(f"{tipo}: meses sin ninguna medicion en la fuente (2023-01 a 2026-09)",
+            "Documentar (no se inventan valores)", len(sin_datos), len(sin_datos),
+            ", ".join(sin_datos) or "-")
+
     medicion = consolidar(df, tipo)
     medicion["n_registros"] = medicion["n_registros"].astype(int)
     columnas = ["fecha", "codigo_estacion"] + valores + ["n_registros"]
@@ -189,7 +197,10 @@ def main() -> dict:
                "filas_bronce": filas_bronce, "filas_plata": filas_plata,
                "filas_cuarentena": filas_cuarentena, "motivos_cuarentena": motivos,
                "nota": "Bronce ya viene agregado por dia y estacion en la consulta SoQL "
-                       "(los datasets completos tienen cientos de millones de registros).",
+                       "(los datasets completos tienen cientos de millones de registros). "
+                       "Limitacion de la fuente: entre 2023-09 y 2024-10 reportan muy pocas "
+                       "estaciones automaticas de Antioquia, y el dataset llega solo hasta 2026-07; "
+                       "los promedios de clima de esos meses son menos representativos.",
                "metricas": m.filas}
     guardar_metricas("ideam", resumen)
     log(f"IDEAM: {filas_plata:,} filas en plata, {len(estaciones)} estaciones, "
