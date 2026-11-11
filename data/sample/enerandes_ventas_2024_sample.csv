@@ -1,0 +1,201 @@
+col_0,col_1,col_2,col_3,col_4,col_5,col_6,col_7,_fuente_origen,_fecha_ingesta
+PERIODO,MUNICIPIO,SEGMENTO CLIENTE,MODALIDAD,ENERGIA,UNIDAD,VALOR ($),NUM CLIENTES,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Bello,Comercial,Bolsa,384574,kWh,413631897,275,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,Caldas,Industrial,Contrato,349643,kWh,320188619,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-07,Santa Fe de Antioquia,Residencial,Bolsa,56800,kWh,54057349,355,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-09,Rionegro (Ant),Comercial,Contrato,603966,kWh,674506930,431,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-08,Turbo,Residencial,Contrato,575822,kWh,554338443,3599,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Bello ,Residencial,Contrato,2683.655,MWh,2528411585,16773,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Sabaneta,Residencial,Bolsa,237356,kWh,229690294,1483,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+apr-24,Medellín,IND,CONTRATOS,7200090,kWh,6439653762,171,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+12/2024,Girardota,Residencial,CONTRATOS,378144,kWh,377225991,2363,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Bello,Comercial,Bolsa,369935,kWh,420770396,264,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Caucasia,Residencial,Bolsa,135360,kWh,126656852,846,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+11/2024,La Estrella,Residencial,Bolsa,122.222,MWh,119821450,764,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Caucasia,Comercial,bolsa,79.501,MWh,85996109,57,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,La Estrella,Residencial,CONTRATOS,441634,kWh,437363716,2760,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+12/2024,Santa Fe de Antioquia,Comercial,Bolsa,29.361,MWh,33142780,21,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+05/2024,Apartadó,Comercial,Contrato,399550,kWh,430969341,285,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-05,Caucasia,Comercial,Contrato,270680,kWh,294469250,193,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Caldas,Industrial,Bolsa,93661,kWh,87999775,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+may-24,Santa Fe de Antioquia,Residencial,Bolsa,-59769,kWh,55827954,374,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,Santa Fe de Antioquia,Industrial,Contrato,141.402,MWh,129298191,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Rionegro,Industrial,Contrato,782.878,MWh,682547971,19,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Copacabana,Comercial,Bolsa,68034,kWh,71657953,49,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+11/2024,Medellín,Comercial,Contrato,4487059,kWh,5037072474,3205,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Caucasia,Residencial,Contrato,467.235,MWh,446151347,2920,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,Caucasia,Comercial ,Bolsa,66657,kWh,69011222,48,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Marinilla,Comercial,Contrato,206263,kWh,221643297,147,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Turbo,Residencial,Bolsa,180633,kWh,170495810,1129,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jan-24,Envigado,Comercial,Contrato,951515,kWh,,680,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+11/2024,Girardota,Residencial,Contrato,356.596,MWh,350958585,2229,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,Rionegro,RESID.,Bolsa,300502,kWh,296855689,1878,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Copacabana,Comercial,Bolsa,76367,kWh,82473988,55,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Caucasia,Comercial,Bolsa,63529,kWh,66919114,45,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,La Estrella,Industrial,Contrato,349896,kWh,314518698,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,La Estrella,Industrial,Contrato,370.851,MWh,339707213,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+apr-24,Rionegro,Comercial,Contrato,604505,kWh,642642601,432,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+04/2024,Apartadó,Residencial,Contrato,737187,kWh,684757639,4607,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Bello,Comercial,Bolsa,398357,kWh,432844114,285,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Bello,Residencial,Contrato,2581476,kWh,2512725094,16134,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Copacabana,Industrial,Contrato,388.003,MWh,345959860,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+11/2024,Sabaneta,Comercial,Bolsa,130096,kWh,148042789,93,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+mar-24,Girardota,Industrial,Contrato,272604,kWh,230745701,6,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,Medellín,Residencial,Bolsa,2426677,kWh,2222776316,15167,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,La Estrella,Comercial,Bolsa,75816,kWh,85449974,54,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Turbo,Industrial,Contrato,392052,kWh,333667155,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+apr-24,Medellín,Comercial ,Bolsa,1415.111,MWh,1513429221,1011,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Santa Fe de Antioquia,Residencial,Contrato,175.507,MWh,161374595,1097,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-08,Itagüí,Residencial,Contrato,1974849,kWh,1918381107,12343,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,La Estrella,Residencial,Contrato,482577,kWh,464919643,3016,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,La Estrella,Comercial,Bolsa,72773,kWh,76403938,52,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Caucasia,Industrial,Bolsa,102.329,MWh,92997149,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+may-24,Sabaneta,Residencial,Bolsa,250474,kWh,238946819,1565,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Sabaneta,Industrial,Bolsa,193314,kWh,173859248,5,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+04/2024,Santa Fe de Antioquia,Residencial,Contrato,189991,kWh,176597606,1187,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+04/2024,Marinilla,Industrial,Contrato,292267,kWh,256153240,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Medellín,Industrial,Contrato,7101670,kWh,6154272394,169,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+06/2024,La Estrella,Industrial,Bolsa,105107,kWh,94167380,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-09,Caucasia,Comercial,Bolsa,71.262,MWh,80160531,51,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Caldas,Comercial,Contrato,273505,kWh,298027330,195,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Copacabana,Comercial,Contrato,251102,kWh,267255960,179,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+05/2024,Caldas,Industrial,Contrato,386351,kWh,343702335,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Marinilla,Comercial,Bolsa,60103,kWh,65547722,43,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Medellín,Residencial,Contrato,8963.431,MWh,8294709633,56021,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,Turbo,Industrial,Contrato,444748,kWh,407740135,11,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Copacabana,Comercial,Contrato,256597,kWh,273669523,183,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Caldas,Residencial,Bolsa,134799,kWh,126400774,842,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Rionegro,Residencial,Contrato,1142710,kWh,1081309082,7142,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Santa Fe de Antioquia,Residencial,Contrato,181827,kWh,178149366,1136,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,Marinilla,Comercial,Bolsa,61.507,MWh,68128631,44,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,Turbo,Comercial,Contrato,288.848,MWh,326390403,206,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-11,La Estrella,Comercial,Bolsa,70677,kWh,79251304,50,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,Copacabana,Comercial,Bolsa,72622,kWh,79916691,52,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Itagüí,Residencial,Bolsa,499.337,MWh,482640028,3121,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+06/2024,Marinilla,Comercial,Bolsa,60258,kWh,64269115,43,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Girardota,Comercial,Bolsa,52985,kWh,58774113,38,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Caucasia,Comercial,Contrato,285.964,MWh,315581944,204,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Copacabana,Industrial,Bolsa,98686,kWh,88022051,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Itagüí,Industrial,Bolsa,401291,kWh,349082800,10,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+apr-24,Turbo,Residencial,Contrato,558685,kWh,513231956,3492,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Santafe de Antioquia,Residencial,Bolsa,56265,kWh,53599209,352,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Marinilla,Industrial,Bolsa,78868,kWh,70834008,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Sabaneta,Residencial,Bolsa,218076,kWh,203905828,1363,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Apartadó,Comercial,Bolsa,110216,kWh,115704026,79,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,La Estrella,Industrial,Bolsa,93965,kWh,85026408,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Turbo,Residencial,Contrato,534318,kWh,525886384,3339,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Bello,Residencial,Bolsa,717724,kWh,690587791,4486,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Turbo,Comercial,Bolsa,89.978,MWh,98489633,64,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+01/2024,Itagüí,Residencial,bolsa,480269,kWh,437532883,3002,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Envigado,Comercial,Bolsa,227.915,MWh,256684714,163,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,Copacabana,Residencial,Bolsa,128916,kWh,124939001,806,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,Caldas,Comercial,Contrato,260171,kWh,299526754,186,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Girardota,Residencial,Bolsa,106.177,MWh,103802812,664,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Envigado,Industrial,Contrato,1154488,kWh,1056389099,27,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+05/2024,Turbo,Industrial,Bolsa,121455,kWh,106094868,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Bello,Comercial,Bolsa,325937,kWh,340714901,233,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Marinilla,Industrial,Contrato,284440,kWh,252322431,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Caucasia,Industrial,bolsa,97427,kWh,89269169,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Caldas,Residencial,Contrato,468744,kWh,442359050,2930,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Bello ,Residencial,Contrato,2606997,kWh,2482250165,16294,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+mar-24,Caucasia,Residencial,Bolsa,133056,kWh,121680685,832,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Caldas,Comercial,Contrato,259070,kWh,277483367,185,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+05/2024,Bello,Comercial,Bolsa,392892,kWh,428054111,281,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Caucasia,Residencial,Bolsa,133.019,MWh,123982167,831,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Caldas,Industrial,Contrato,368.709,MWh,314428279,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Itagüí,IND,CONTRATOS,1344.422,MWh,1185193574,32,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Santa Fe de Antioquia,Residencial,Contrato,185.03,MWh,171545961,1156,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Apartado,Industrial,Bolsa,151379,kWh,129224723,4,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Marinilla,Industrial,Contrato,278.34,MWh,234734374,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,La Estrella,Industrial,Contrato,395016,kWh,353615200,9,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Caucasia,Industrial,Bolsa,91.585,MWh,82878041,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Caldas,Industrial,Contrato,338326,kWh,308557859,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+04/2024,Sabaneta,Industrial,Bolsa,185548,kWh,161858833,4,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Itagüí,Industrial,CONTRATOS,1458.677,MWh,1308310947,35,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,Santa Fe de Antioquia,Residencial,Bolsa,48649,kWh,46689778,304,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Girardota,Industrial,Contrato,296851,kWh,256253617,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,La Estrella,Residencial,Contrato,462500,kWh,418806648,2891,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Santa Fe de Antioquia,Residencial,Bolsa,49.655,MWh,47564228,310,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,Santa Fe de Antioquia,Comercial,Contrato,108.596,MWh,112927590,78,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,Girardota,Residencial,Bolsa,108.036,MWh,97178781,675,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jan-24,Sabaneta,Industrial,Contrato,608320,kWh,519290857,14,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-11,Caldas,Comercial,Bolsa,70.642,MWh,79048742,50,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Girardota,Residencial,Contrato,410985,kWh,392420932,2569,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,La Estrella,Comercial,CONTRATOS,290907,kWh,322838918,208,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Turbo,Industrial,Bolsa,113.722,MWh,103388006,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,Santa Fe de Antioquia,Residencial,Bolsa,47.281,MWh,42646917,296,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jan-24,Sabaneta,Comercial,Bolsa,130967,kWh,137133629,94,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Sabaneta,Comercial,Bolsa,140.252,MWh,153862077,100,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+dec-24,Girardota,Industrial,Bolsa,80218,kWh,74467289,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jun-24,Envigado,Residencial,Contrato,1697.186,MWh,1590526794,10607,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-07,Sabaneta,Comercial,bolsa,140802,kWh,155073528,101,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Medellín,Residencial,Contrato,9579.073,MWh,8955834357,59869,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+01/2024,Caucasia,Residencial,Contrato,,kWh,395699865,2691,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Santa Fe de Antioquia,Industrial,Contrato,124.087,MWh,114044288,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Sabaneta,Industrial,Contrato,656788,kWh,586241685,16,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-09,Envigado,Residencial,CONTRATOS,1669497,kWh,1601052684,10434,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+09/2024,La Estrella,Comercial,Bolsa,74207,kWh,83564151,53,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Santa Fe de Antioquia,Comercial,Bolsa,29.125,MWh,32221111,21,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Marinilla,Residencial,Bolsa,107445,kWh,100324426,672,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,Caldas,Comercial,Contrato,244434,kWh,257496738,175,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+04/2024,Bello,Comercial,Bolsa,405669,kWh,433328003,290,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+01/2024,Apartadó,Comercial,Bolsa,111.285,MWh,116802322,79,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Marinilla,Residencial,Bolsa,98557,kWh,98006019,616,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+dec-24,Apartadó,Comercial,Contrato,405.794,MWh,468329841,290,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,ITAGUI,Comercial ,Contrato,1024881,kWh,1141260298,732,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Rionegro,Industrial,Contrato,793587,kWh,728075401,19,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jan-24,envigado,Comercial,Bolsa,209312,kWh,220048167,150,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+08/2024,Rionegro,Residencial,Bolsa,312977,kWh,295343795,1956,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,Marinilla,Comercial,Contrato,199685,kWh,211235642,143,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+feb-24,Medellín,Residencial,Contrato,9855.976,MWh,9093367294,61600,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-08,Girardota,Comercial,Contrato,224530,kWh,252197538,160,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Apartadó,Comercial,Bolsa,112.932,MWh,129391105,81,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,Marinilla,Industrial,Contrato,322055,kWh,291661965,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+02/2024,Copacabana,Residencial,Contrato,475213,kWh,430753639,2970,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Girardota,,Bolsa,58296,kWh,67083205,42,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,La Estrella,Comercial,Contrato,209.123,MWh,236700769,149,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+06/2024,Marinilla,Industrial,Contrato,305.312,MWh,267160757,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Bello,Industrial,Contrato,2043286,kWh,1872930014,49,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Apartadó,Residencial,Contrato,757861,kWh,725352575,4737,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,Bello,Residencial,Contrato,2260.211,MWh,2085041052,14126,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Caucasia,Residencial,Contrato,445.946,MWh,441338834,2787,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+07/2024,Medellín,Industrial,Bolsa,1993559,kWh,1782529035,47,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+mar-24,Girardota,Residencial,Bolsa,112.384,MWh,102941448,702,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Sabaneta,Industrial,Contrato,634.05,MWh,555191769,15,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+apr-24,Sabaneta,Industrial,Contrato,616402,kWh,545127418,15,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+mar-24,Santa Fe de Antioquia,Industrial,Contrato,144985,kWh,124951922,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Santa Fe de Antioquia,Comercial,Contrato,104819,kWh,112579342,75,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+01/2024,Santa Fe de Antioquia,Industrial,Contrato,136333,kWh,114991963,3,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,Envigado,Industrial,Bolsa,328354,kWh,299806692,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+nov-24,Medellín,Residencial,Contrato,8942243,kWh,8775077955,55889,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+01/2024,Rionegro,Industrial,Contrato,775.717,MWh,652959406,18,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+oct-24,Turbo,Residencial,Bolsa,156700,kWh,152369821,979,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Girardota,Comercial,Contrato,215821,kWh,247914354,154,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-08,Itagüí,Industrial,Contrato,1334568,kWh,1191066942,32,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Bello,Residencial,Bolsa,626636,kWh,602875386,3916,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Girardota,Industrial,Contrato,294.234,MWh,273074678,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-04,Copacabana,Comercial,Contrato,267149,kWh,288786543,191,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-02,Itagüí,Residencial,Bolsa,500.23,MWh,465537215,3126,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+sep-24,Marinilla,IND,Contrato,285.775,MWh,261234659,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-09,Sabaneta,Industrial,Contrato,628629,kWh,566393454,15,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-07,Marinilla,Comercial,Bolsa,62040,kWh,68116519,44,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Medellín,Comercial,Contrato,5157311,kWh,5815975528,3684,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Copacabana,Industrial,Contrato,351906,kWh,314772275,8,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,La Estrella,Comercial,Contrato,228814,kWh,240216370,163,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,La Estrella,Comercial,Contrato,,MWh,236907038,160,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-03,La Estrella,Comercial,Bolsa,73.484,MWh,77271323,52,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Sabaneta,Residencial,Contrato,884554,kWh,842747338,5528,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+12/2024,Caucasia,IND,Bolsa,93359,kWh,86677913,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,La Estrella,Residencial,bolsa,142.086,MWh,135575927,888,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+03/2024,Girardota,Comercial,Contrato,190.521,MWh,199358656,136,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+10/2024,Envigado,Residencial,Contrato,1594.056,MWh,1526564803,9963,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-10,Marinilla,Comercial,Contrato,183530,kWh,208288183,131,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jul-24,Envigado,Residencial,Bolsa,461.049,MWh,436516133,2882,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-01,Copacabana,Industrial,Bolsa,93.168,MWh,79836870,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+06/2024,Itagüí,Residencial,Contrato,1868011,kWh,1751258729,11675,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-05,Sabaneta,Comercial,Bolsa,138754,kWh,151635535,99,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+jan-24,La Estrella,Residencial,Contrato,418553,kWh,384648814,2616,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+aug-24,Girardota,Industrial,Contrato,286782,kWh,254589301,7,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+mar-24,Girardota,Industrial,Bolsa,78430,kWh,68674716,2,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-12,Marinilla,Comercial,Contrato,201250,kWh,228591510,144,enerandes_ventas_2024,2026-11-11T17:08:05.041069
+2024-06,Bello,Comercial,CONTRATOS,1396.018,MWh,1492558918,997,enerandes_ventas_2024,2026-11-11T17:08:05.041069
