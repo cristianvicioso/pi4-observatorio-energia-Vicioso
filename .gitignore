@@ -5,3 +5,7 @@ __pycache__/
 data/bronze/
 .pytest_cache/
 .DS_Store
+# Archivos que genera dbt al ejecutarse (se regeneran con dbt build)
+dbt/target/
+dbt/logs/
+dbt/.user.yml
