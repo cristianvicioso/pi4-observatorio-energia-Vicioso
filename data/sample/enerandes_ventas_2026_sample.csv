@@ -1,0 +1,201 @@
+col_0,col_1,col_2,col_3,col_4,col_5,col_6,_fuente_origen,_fecha_ingesta
+EnerAndes S.A.S. E.S.P. - Reporte de ventas 2026 - Gerencia Comercial,,,,,,,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+Fuente: sistema comercial. Uso interno.,,,,,,,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+,,,,,,,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+Fecha corte,Ciudad,Tipo cliente,Compra,kWh,Total facturado COP,Clientes activos,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Apartadó,Industrial,Bolsa,171572,177022706,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Bello,Residencial,Bolsa,,845374690,4810,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Copacabana,Industrial,Bolsa,107983,111298656,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Turbo,Industrial,Bolsa,129004,138379114,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Caucasia,IND,Bolsa,112139,119325186,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Marinilla,Comercial,Bolsa,66347,86553616,47,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Bello,Residencial,Contrato,2513742,2776790442,15711,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Apartadó,Industrial,Bolsa,180234,193539800,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Rio Negro,Industrial,Bolsa,260376,283937389,6,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Girardota,Comercial,Bolsa,58187,73612293,42,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Turbo,Residencial,Bolsa,176966,198379346,1106,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Caucasia,Residencial,Contrato,485623,,3035,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Girardota,Industrial,Bolsa,82021,86592872,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Turbo,Comercial,Contrato,332799,418263772,238,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Girardota,Industrial,Bolsa,84861,91244558,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Caucasia,Industrial,Bolsa,103387,105249902,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Turbo,Comercial,Contrato,333784,444220520,238,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,La Estrella,Industrial,Contrato,393908,403093226,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Copacabana,Comercial ,Bolsa,72194,91308702,52,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Caldas,Comercial,Contrato,269013,338474682,192,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Medellín,Comercial,Contrato,5838842,7617765708,4171,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,La Estrella,IND,Contrato,412647,423583945,10,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Copacabana,Residencial,CONTRATOS,519111,593739426,3244,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Caldas,Industrial,Contrato,365656,369910771,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Caucasia,Industrial,Bolsa,116383,121570248,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Marinilla,Residencial,Bolsa,104798,112384814,655,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Apartadó,Residencial,Bolsa,256810,287512749,1605,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,BELLO,Comercial,Contrato,1409865,1845418177,1007,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,La Estrella,Comercial,Contrato,275899,358017668,197,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Itagüí,Industrial,Bolsa,388012,402730947,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Marinilla,Residencial,bolsa,126372,140357636,790,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Envigado,Industrial,Bolsa,374939,392589801,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Copacabana,Residencial,CONTRATOS,485314,558124766,3033,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Bello ,Industrial,Bolsa,499440,511276839,12,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Itagüí,Residencial,Bolsa,554882,636194675,3468,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Sabaneta,Industrial,Contrato,651823,686753445,16,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Caucasia,,Contrato,369612,390805453,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,La Estrella,Comercial,Contrato,256066,344045917,183,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,La Estrella,Industrial,Bolsa,101959,107457601,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Envigado,Residencial,Bolsa,491355,552752480,3071,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Santa Fe de Antioquia,Industrial,Contrato,149297,154292084,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Santa Fe de Antioquia,Industrial,Contrato,130048,139585586,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Caldas,Residencial,Contrato,482334,527923171,3015,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Marinilla,Comercial,Contrato,211988,268828582,151,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,APARTADÓ,Comercial,Bolsa,128351,163117497,92,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Caldas,Residencial,Bolsa,146947,165237957,918,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Apartadó,Residencial,Bolsa,229925,259598830,1437,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Rionegro,Residencial,Contrato,1216394,1361404803,7602,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Turbo,Comercial,Contrato,314547,401389574,225,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Rionegro,Residencial,Bolsa,333215,361700562,2083,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Itagui,Residencial,Contrato,1937960,2144447248,12112,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Caucasia,Industrial,Contrato,365081,377015200,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Itagüí,Residencial,Bolsa,493885,522783344,3087,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Caldas,Comercial,Bolsa,84735,109514894,61,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Bello,Residencial,Bolsa,742414,871292443,4640,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Apartadó,Comercial,Contrato,461131,601361239,329,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Caldas,Comercial,Bolsa,76864,99525729,55,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Turbo,Comercial,Bolsa,90585,118055329,65,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Girardota,Comercial,Contrato,209476,273252561,150,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Turbo,Industrial,Bolsa,123255,133674808,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Copacabana,IND,Contrato,344733,350138919,8,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Caucasia,Comercial,bolsa,78863,105410868,56,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Sabaneta,Industrial,Contrato,608406,618671476,14,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Turbo,Residencial,Contrato,629569,713110656,3935,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Apartadó,Residencial,Bolsa,209245,237137660,1308,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Copacabana,Comercial,Bolsa,81110,104589457,58,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Caucasia,Industrial,Contrato,377431,411252147,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Turbo,Comercial,Contrato,317255,401978989,227,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,La Estrella,Residencial,Contrato,511935,575340429,3200,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Sabaneta,RESID.,CONTRATOS,942682,1077665935,5892,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Girardota,Comercial,Bolsa,64470,86387029,46,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Envigado,Residencial,Contrato,1656197,1794375267,10351,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Sta Fe de Antioquia,Comercial,Bolsa,33918,44696757,24,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Turbo,Comercial,Bolsa,99185,129115813,71,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Bello,Comercial,Bolsa,371901,475637133,266,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Caldas,Residencial,Contrato,490313,538255666,3064,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,La Estrella,Comercial,Bolsa,74626,94830093,53,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Apartadó,Industrial,Bolsa,161544,174161339,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Sabaneta,Comercial,Contrato,504133,640744698,360,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Caldas,Comercial,Contrato,274720,360200928,196,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Bello ,Residencial,Bolsa,745111,812712856,4657,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Caucasia,Comercial,Contrato,273059,354349208,195,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Apartadó,Industrial,Bolsa,173114,181246407,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Apartadó,Industrial,Contrato,612689,667050383,15,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Copacabana,Residencial,Contrato,535217,600859900,3345,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Rionegro,Residencial,Contrato,1123564,1208639784,7022,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Turbo,Comercial,Contrato,370300,475817593,264,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Itagüí,Comercial,Bolsa,305422,387751365,218,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Sabaneta,Comercial,Contrato,510224,687744527,364,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Girardota,Comercial,Contrato,183478,227816221,131,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Girardota,Residencial,Contrato,399102,448531933,2494,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Bello,Comercial,Bolsa,381838,513308322,273,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Caldas,Residencial,Contrato,509091,585223445,3182,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Copacabana,Comercial,Bolsa,73256,92986508,52,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Apartadó,Industrial,Contrato,633120,665182525,15,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,envigado,Comercial,Bolsa,240942,322465072,172,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Medellín D.E.,Comercial,Contrato,5226119,6462881954,3733,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Rionegro,Comercial,Bolsa,177044,220721610,126,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Marinilla,Industrial,Contrato,300241,319452889,7,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Santa Fe de Antioquia,Industrial,Bolsa,43841,47642239,1,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Sabaneta,Residencial,CONTRATOS,874633,990770758,5466,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Girardota,Comercial,Contrato,221852,279379367,158,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Caldas,Residencial,Contrato,474458,539202396,2965,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Envigado,Comercial,Contrato,936802,1239611791,669,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Caucasia,Comercial,Contrato,291009,386896041,208,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Turbo,Residencial,Contrato,595258,653555083,3720,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Apartadó,Comercial,Contrato,426361,554993836,305,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Caldas,Residencial,Contrato,528499,599180001,3303,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Girardota,Industrial,Contrato,326436,346861421,8,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Medellín,Industrial,bolsa,2016525,2149879144,48,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Girardota,Comercial,Contrato,218347,274798932,156,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Sabaneta,Industrial,Contrato,696987,740313456,17,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Apartadó,Industrial,bolsa,167315,172428912,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Girardota,Comercial,Bolsa,59301,76883478,42,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Marinilla,Residencial,Contrato,416635,472230796,2604,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Marinilla,Residencial,CONTRATOS,353335,376697641,2208,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Sabaneta,Comercial,Bolsa,162265,214147931,116,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Marinilla,Residencial,Contrato,398855,443361493,2493,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Bello ,Industrial,Bolsa,560569,602087774,13,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Marinilla,Residencial,Bolsa,112510,129703911,703,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,envigado,Industrial,Contrato,1294741,1377699198,31,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Santa Fe de Antioquia,Industrial,Contrato,150942,157518503,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,ITAGUI,Industrial,CONTRATOS,1206222,1235317285,29,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Sabaneta,Residencial,Contrato,911778,992002455,5699,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Turbo,Industrial,Contrato,420747,428604725,10,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Santa Fe de Antioquia,Industrial,Bolsa,40307,41811090,1,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,La Estrella,Comercial,Contrato,253119,321792936,181,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Turbo,Industrial,Contrato,445462,468988846,11,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Caucasia,IND,Bolsa,102065,102817660,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Sta Fe de Antioquia,Comercial,Bolsa,29461,39943659,21,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Envigado,Residencial,Contrato,1595049,1748673053,9969,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Copacabana,Industrial,Bolsa,115315,122923182,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Caucasia,Industrial,Bolsa,103996,110742107,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Bello,Comercial,Contrato,1374661,1786965270,982,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Caucasia,Residencial,Bolsa,146632,166668308,916,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,envigado,IND,Bolsa,319857,329684394,8,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Rionegro,Comercial,Contrato,649096,864977474,464,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Girardota,Residencial,Bolsa,113997,125514483,712,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Marinilla,Comercial,Bolsa,65580,87962886,47,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Envigado,Industrial,Bolsa,374538,387877319,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Envigado,Residencial,bolsa,516428,568563309,3228,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Rionegro,Residencial,Bolsa,346903,391345747,2168,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Rionegro,Comercial,Contrato,682711,870774977,488,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Copacabana,Comercial ,Contrato,285944,373008588,204,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Envigado,Industrial,Bolsa,337872,343425333,8,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Rionegro,Comercial,Bolsa,200474,257200136,143,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Santafe de Antioquia,Residencial,Bolsa,56153,63257982,351,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Girardota,Comercial,Contrato,218347,274798932,156,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,APARTADÓ,Residencial,Contrato,743530,837027673,4647,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Caucasia,Comercial,Contrato,265944,350796714,190,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Itagüí,Comercial,Contrato,998036,1273881341,713,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Apartadó,RESID.,Bolsa,209614,232217922,1310,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Caucasia,Residencial,CONTRATOS,521399,592869346,3259,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Turbo,Residencial,Bolsa,179114,203807308,1119,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Envigado,Comercial,Contrato,903691,1202338770,645,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Santa Fe de Antioquia,Residencial,Contrato,193881,211995681,1212,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Itagüí,Industrial,Contrato,1453820,1577963381,35,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Marinilla,Residencial,Contrato,370161,407296088,2314,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Turbo,RESID.,Bolsa,160014,184351816,1000,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Itaguí,Comercial,Contrato,1086969,1407684094,776,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Santa Fe de Antioquia,Industrial,Bolsa,42700,44978324,1,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Girardota,Comercial,Bolsa,60032,76157984,43,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Turbo,Industrial,Bolsa,126679,136692418,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Sabaneta,Industrial,Bolsa,168782,168980391,4,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Apartado,Industrial,Contrato,635832,662638796,15,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Girardota,Comercial,Bolsa,65550,85787262,47,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Itagüí,Comercial,Contrato,984555,1230588105,703,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Apartadó,Comercial,Bolsa,125129,166160385,89,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Copacabana,Industrial,Bolsa,109372,113565166,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Medellín,Industrial,Contrato,8016642,8751464351,191,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Apartadó,Residencial,Bolsa,238560,277842711,1491,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Caldas,Industrial,Bolsa,103102,107511784,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Marinilla,Comercial,Contrato,218222,287442369,156,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Marinilla,Industrial,Bolsa,92893,97255913,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Caucasia,Comercial,Bolsa,70597,92791386,50,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Marinilla,Residencial,Contrato,404817,459938711,2530,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Apartadó,Residencial,Contrato,830213,924389872,5189,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Girardota,Industrial,Bolsa,90361,94063284,2,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Copacabana,Industrial,Bolsa,111167,119135374,3,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Itagüí,Comercial,Contrato,1031208,1302225949,737,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Medellín,Comercial,Contrato,5792183,7282676273,4137,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/04/2026,Girardota,Comercial,Contrato,210149,271351548,150,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Marinilla,Comercial,Contrato,198328,251142680,142,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Rionegro (Ant),Industrial,Contrato,854550,922572838,20,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/06/2026,Rio Negro,Comercial,Contrato,653088,860894886,466,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/02/2026,Apartadó,Industrial,Contrato,562223,582894872,13,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Envigado,Comercial,Contrato,975373,1278715443,697,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/09/2026,Girardota,Comercial,bolsa,62541,84628174,45,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Marinilla,Comercial,Contrato,233693,298150529,167,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/08/2026,Sabaneta,Comercial,Bolsa,138551,184522457,99,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Sabaneta,Comercial,Contrato,479566,609279292,343,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/01/2026,Bello ,Comercial,Contrato,1371911,1692570382,980,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/05/2026,Caucasia,Industrial,Contrato,361280,383279267,9,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Caucasia,Residencial,Contrato,512172,557697511,3201,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/03/2026,Rionegro,Residencial,Bolsa,353229,381796968,2208,enerandes_ventas_2026,2026-11-11T17:08:05.050625
+01/07/2026,Rionegro,Comercial,Contrato,720099,947146735,514,enerandes_ventas_2026,2026-11-11T17:08:05.050625

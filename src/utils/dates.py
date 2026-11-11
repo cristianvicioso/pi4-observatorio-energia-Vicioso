@@ -9,7 +9,9 @@ def generar_ventanas_fechas(fecha_inicio: str, fecha_fin: str, dias_ventana: int
     
     ventanas = []
     actual = inicio
-    while actual < fin:
+    # <= (y no <): si no, el ultimo dia del rango se pierde cuando la ultima
+    # ventana termina justo un dia antes de fin
+    while actual <= fin:
         siguiente = min(actual + timedelta(days=dias_ventana - 1), fin)
         ventanas.append((actual.strftime(fmt), siguiente.strftime(fmt)))
         actual = siguiente + timedelta(days=1)

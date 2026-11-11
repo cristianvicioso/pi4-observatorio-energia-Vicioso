@@ -1,22 +1,36 @@
-# Las fuentes de dbt: las tablas de la capa plata que dbt va a leer.
-# Es un archivo YAML: no se ejecuta; dbt lo lee para saber de donde salen los datos.
-
-
-# La version del formato de este archivo (dbt pide 2)
+# Fuentes de la capa oro: las tablas de la capa plata (archivos Parquet en data/silver/).
+# dbt-duckdb las lee directamente con external_location; {name} es el nombre de la tabla.
 version: 2
 
-
-# La lista de fuentes
 sources:
-  # Una fuente llamada "plata". En los .sql se usa asi: source('plata', ...)
   - name: plata
-    # Datos extra para el adaptador de DuckDB
+    description: "Capa plata: tablas limpias y validadas con pandera (src/silver/*.py)."
     meta:
-      # dbt-duckdb lee cada tabla directo del archivo Parquet de la capa plata.
-      # {name} se reemplaza por el nombre de la tabla: enerandes_ventas
-      # -> data/silver/enerandes_ventas.parquet
       external_location: "data/silver/{name}.parquet"
-    # Las tablas de esta fuente
     tables:
-      # Una tabla: las ventas limpias de EnerAndes
       - name: enerandes_ventas
+        description: "Ventas mensuales de EnerAndes 2023-2026 (4 hojas del Excel unificadas)."
+      - name: noaa_oni_mensual
+        description: "ONI mensual (trimestre movil asignado a su mes central) con fase ENSO."
+      - name: trm_diaria
+        description: "TRM (COP/USD) de un dia."
+      - name: divipola_municipios
+        description: "Municipios de Antioquia con su codigo DIVIPOLA (DANE)."
+      - name: xm_precio_bolsa_horario
+        description: "Precio de bolsa nacional por fecha y hora (COP/kWh)."
+      - name: xm_demanda_horaria
+        description: "Demanda comercial del SIN por fecha y hora (kWh)."
+      - name: xm_generacion_horaria
+        description: "Generacion real por planta, fecha y hora (kWh)."
+      - name: xm_embalses_diario
+        description: "Volumen util diario por embalse (kWh)."
+      - name: xm_aportes_diario
+        description: "Aportes hidricos diarios por rio (kWh)."
+      - name: xm_recursos
+        description: "Catalogo de plantas de generacion (ListadoRecursos de XM)."
+      - name: ideam_precipitacion_diaria
+        description: "Precipitacion diaria por estacion del IDEAM en Antioquia (mm)."
+      - name: ideam_temperatura_diaria
+        description: "Temperatura diaria (media, minima, maxima) por estacion del IDEAM en Antioquia."
+      - name: ideam_estaciones
+        description: "Estaciones del IDEAM en Antioquia con su municipio."

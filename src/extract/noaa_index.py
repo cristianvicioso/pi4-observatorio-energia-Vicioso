@@ -1,19 +1,27 @@
+"""
+Extractor del indice ONI (Oceanic Nino Index) de NOAA.
+
+Archivo oficial: https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt
+Viene por trimestres moviles: una fila por (SEAS, YR) con la temperatura del
+mar (TOTAL) y su anomalia (ANOM), que es el valor ONI.
+
+    SEAS  YR   TOTAL   ANOM
+     DJF 1950  25.01  -1.32
+     JFM 1950  25.36  -1.20
+
+En bronce se guarda tal cual (como texto). La capa plata asigna cada trimestre
+a su mes central y calcula la fase ENSO (src/silver/noaa.py).
+"""
+import io
+
 import pandas as pd
+import requests
+
+URL_ONI = "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt"
+
 
 def extraer_noaa_oni() -> pd.DataFrame:
-    """Extrae el índice ONI de NOAA convirtiendo los nombres de las columnas a texto."""
-    url = "https://psl.noaa.gov/data/correlation/oni.data"
-    try:
-        df = pd.read_csv(url, skiprows=1, header=None, engine="python", on_bad_lines="skip")
-        if not df.empty:
-            # Asegurar que todas las columnas sean tipo string para compatibilidad con Parquet
-            df.columns = [str(col) for col in df.columns]
-            return df
-    except Exception as e:
-        print(f"⚠️ Sin conexión con servidor NOAA ({e}). Generando registros base.")
-
-    cols = ["AÑO", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"]
-    return pd.DataFrame([
-        [2025, 0.5, 0.4, 0.3, 0.2, 0.1, 0.0, -0.1, -0.2, -0.3, -0.4, -0.5, -0.6],
-        [2026, 0.2, 0.1, 0.0, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-    ], columns=cols)
+    res = requests.get(URL_ONI, timeout=60)
+    res.raise_for_status()
+    # sep=r"\s+": las columnas estan separadas por uno o mas espacios
+    return pd.read_csv(io.StringIO(res.text), sep=r"\s+", dtype=str)

@@ -9,3 +9,8 @@ data/bronze/
 dbt/target/
 dbt/logs/
 dbt/.user.yml
+# Capas plata y oro: se reconstruyen con "python -m src.transformar" (no se suben a GitHub)
+data/silver/
+data/gold/
+*.duckdb
+*.duckdb.wal
