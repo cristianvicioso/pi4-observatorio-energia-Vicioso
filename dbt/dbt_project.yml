@@ -1,0 +1,29 @@
+# Configuracion del proyecto dbt: como se llama, donde estan los modelos y como se crean.
+# Es un archivo YAML: cada linea es "nombre: valor", y lo que va con sangria
+# (2 espacios mas) pertenece a la linea de arriba. No se ejecuta: dbt lo lee.
+
+
+# El nombre del proyecto dbt
+name: observatorio
+# La version del proyecto. La escribe el equipo; dbt solo la muestra
+version: "1.0.0"
+# Que conexion usar: la que se llama "observatorio" en profiles.yml
+profile: observatorio
+
+
+# La carpeta donde estan los modelos (los archivos .sql)
+model-paths: ["models"]
+
+
+# Como se crea cada grupo de modelos
+models:
+  # Los modelos de este proyecto (el mismo name de arriba)
+  observatorio:
+    # Los de la carpeta models/staging/...
+    staging:
+      # ...se crean como VISTAS: consultas guardadas que no copian los datos
+      +materialized: view
+    # Los de la carpeta models/marts/...
+    marts:
+      # ...se crean como TABLAS reales dentro del archivo data/observatorio.duckdb
+      +materialized: table

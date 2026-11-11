@@ -1,0 +1,22 @@
+# Las fuentes de dbt: las tablas de la capa plata que dbt va a leer.
+# Es un archivo YAML: no se ejecuta; dbt lo lee para saber de donde salen los datos.
+
+
+# La version del formato de este archivo (dbt pide 2)
+version: 2
+
+
+# La lista de fuentes
+sources:
+  # Una fuente llamada "plata". En los .sql se usa asi: source('plata', ...)
+  - name: plata
+    # Datos extra para el adaptador de DuckDB
+    meta:
+      # dbt-duckdb lee cada tabla directo del archivo Parquet de la capa plata.
+      # {name} se reemplaza por el nombre de la tabla: enerandes_ventas
+      # -> data/silver/enerandes_ventas.parquet
+      external_location: "data/silver/{name}.parquet"
+    # Las tablas de esta fuente
+    tables:
+      # Una tabla: las ventas limpias de EnerAndes
+      - name: enerandes_ventas
