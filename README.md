@@ -12,6 +12,34 @@ Está organizado en tres capas:
 
 `data/bronze/`, `data/silver/` y el archivo `.duckdb` **no se suben a GitHub**: se reconstruyen con los comandos de abajo.
 
+### Arquitectura
+
+```mermaid
+flowchart LR
+    subgraph F["Fuentes"]
+        F1[Excel EnerAndes<br/>4 hojas 2023-2026]
+        F2[API XM]
+        F3[IDEAM<br/>datos.gov.co]
+        F4[NOAA ONI]
+        F5[TRM + DIVIPOLA<br/>datos.gov.co]
+    end
+    subgraph B["Bronce · data/bronze"]
+        B1[Parquet tal cual<br/>+ linaje]
+    end
+    subgraph P["Plata · data/silver"]
+        P1[13 tablas limpias<br/>validadas con pandera]
+        P2[Cuarentena<br/>con motivo]
+    end
+    subgraph O["Oro · observatorio.duckdb"]
+        O1[5 hechos + 6 dimensiones<br/>dbt build + pruebas]
+    end
+    F1 & F2 & F3 & F4 & F5 -->|python -m src.pipeline| B1
+    B1 -->|python -m src.transformar<br/>src/silver/*.py| P1
+    B1 -.-> P2
+    P1 -->|dbt build| O1
+    O1 -->|consultas/oro/*.sql| R[Respuestas de negocio]
+```
+
 ---
 
 ## Integrante y roles
@@ -94,10 +122,42 @@ tests/                pruebas de pytest
 - **Reporte**: [`docs/reporte_calidad.md`](docs/reporte_calidad.md). Tiene una tabla por fuente con
   el problema, la regla aplicada y la métrica antes → después.
 
-Las 4 hojas del Excel de EnerAndes tienen encabezados distintos, títulos y notas, filas TOTAL,
-fechas en 4 formatos (`2024-03`, `mar-24`, `03/2024`, `01/03/2026`), energía en kWh y MWh,
-municipios mal escritos, duplicados, celdas vacías y negativos. Se unen en una sola tabla:
-**4.184 filas en bronce → 4.007 limpias + 43 en cuarentena**.
+### Resumen del reporte de calidad
+
+| Fuente | Filas bronce | Filas plata | Filas en cuarentena | Reglas |
+|---|---:|---:|---:|---:|
+| EnerAndes (Excel, 4 hojas) | 4.184 | 4.007 | 43 | 21 |
+| XM (precio, demanda, generación, embalses, aportes, plantas) | 526.085 | 7.748.691 | 0 | 36 |
+| IDEAM (precipitación y temperatura de Antioquia) | 59.854 | 59.812 | 42 | 14 |
+| NOAA (ONI) | 921 | 921 | 0 | 6 |
+| Fuente propia: TRM | 884 | 1.369 | 0 | 6 |
+| Referencia: DIVIPOLA | 125 | 125 | 0 | 3 |
+| **Total** | | | **85** | **86** |
+
+XM tiene más filas en plata que en bronce porque cada fila de bronce trae 24 horas y en plata
+queda una fila por hora. La TRM crece porque una vigencia (por ejemplo, la del viernes) se expande
+a un valor por día.
+
+**Principales reglas de EnerAndes (antes → después)**
+
+| Problema | Regla aplicada | Antes → después |
+|---|---|---|
+| Título y notas antes del encabezado (hojas 2025 y 2026) | Buscar la fila de encabezado y descartar las de arriba | 6 → 0 filas |
+| Encabezados distintos entre hojas | Mapear cada encabezado a un nombre estándar | 29 → 8 nombres |
+| Filas TOTAL | Eliminarlas | 4 → 0 |
+| Filas duplicadas | Dejar una sola copia | 120 → 0 |
+| Fechas en 4 formatos (`2024-03`, `mar-24`, `03/2024`, `01/03/2026`) | Convertir a AAAA-MM; `01/03/2026` = marzo | 4 → 1 formato |
+| Energía en MWh (hoja 2024) | Multiplicar por 1.000 | 337 → 0 filas en MWh |
+| Municipio escrito de varias formas | Unificar con el código DIVIPOLA | 32 → 15 valores |
+| Segmento escrito de varias formas / vacío | Unificar / marcar `No informado` | 6 → 3 valores / 28 → 0 |
+| Tipo de compra escrito de varias formas | Unificar a Bolsa y Contrato | 4 → 2 valores |
+| Energía vacía | Cuarentena | 25 → 0 |
+| Energía negativa | Cuarentena | 18 → 0 |
+| Valor facturado vacío | Dejarlo vacío y documentarlo | 28 → 28 |
+
+**Cuarentena (85 filas):** EnerAndes 43 (25 por energía vacía y 18 por energía negativa) e IDEAM 42
+(15 días con precipitación fuera de 0 a 300 mm y 27 con temperatura fuera de -5 a 45 °C). El detalle de las 86 reglas
+está en [`docs/reporte_calidad.md`](docs/reporte_calidad.md).
 
 **Pruebas:** `python -m pytest` ejecuta 22 pruebas. Las 7 de la clase están en
 `tests/test_limpieza.py` y las 12 nuevas de la EA2, en `tests/test_reglas_ea2.py`: MWh → kWh,
@@ -108,8 +168,23 @@ XM de 24 columnas a filas, entre otras.
 
 ## Capa oro: modelo dimensional
 
-- Diagrama y grano de cada hecho: [`docs/modelo_dimensional.md`](docs/modelo_dimensional.md)
+- Diagrama detallado y grano de cada hecho: [`docs/modelo_dimensional.md`](docs/modelo_dimensional.md)
 - Diccionario de datos: [`docs/diccionario_datos.md`](docs/diccionario_datos.md)
+
+```mermaid
+erDiagram
+    dim_fecha ||--o{ fact_ventas_mensual : fecha_id
+    dim_municipio ||--o{ fact_ventas_mensual : municipio_id
+    dim_segmento ||--o{ fact_ventas_mensual : segmento_id
+    dim_fecha ||--o{ fact_mercado_horario : fecha_id
+    dim_fecha ||--o{ fact_generacion_recurso : fecha_id
+    dim_recurso ||--o{ fact_generacion_recurso : recurso_id
+    dim_fecha ||--o{ fact_hidrologia_diaria : fecha_id
+    dim_fecha ||--o{ fact_clima_diario : fecha_id
+    dim_estacion ||--o{ fact_clima_diario : estacion_id
+    dim_municipio ||--o{ fact_clima_diario : municipio_id
+    dim_municipio ||--o{ dim_estacion : municipio_id
+```
 
 | Hechos | Grano |
 |---|---|
