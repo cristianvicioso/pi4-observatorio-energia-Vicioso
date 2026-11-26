@@ -1,0 +1,96 @@
+# Workflow de GitHub Actions: ejecuta el pipeline completo en una maquina de GitHub.
+# Es un archivo YAML: no se ejecuta en el computador; GitHub lo lee y sigue los pasos.
+# Cada linea es "nombre: valor"; lo que tiene 2 espacios mas pertenece a la linea de arriba.
+
+
+# El nombre del workflow: es el que aparece en la pestana Actions del repositorio
+name: pipeline-observatorio
+
+
+# on: cuando arranca el workflow (los "disparadores"). Aqui hay 3
+on:
+  # 1. schedule: arranca solo, a la hora que dice cron
+  schedule:
+    # "0 11 * * *" = minuto 0, hora 11 UTC, todos los dias. 11:00 UTC = 6:00 a. m. en Colombia
+    - cron: "0 11 * * *"
+  # 2. workflow_dispatch: arranca a mano, con el boton "Run workflow" de la pestana Actions
+  workflow_dispatch:
+  # 3. pull_request: arranca cada vez que se abre o se actualiza un Pull Request...
+  pull_request:
+    # ...que va hacia la rama main
+    branches: [main]
+
+
+# jobs: los trabajos del workflow
+jobs:
+  # El unico trabajo se llama pipeline: bronce, plata, oro, pruebas y exportar
+  pipeline:
+    # runs-on: el computador donde corre. ubuntu-latest es un Linux nuevo y vacio
+    # que GitHub presta para esta ejecucion y borra al terminar
+    runs-on: ubuntu-latest
+    # Si algo se queda pegado (una API que no responde), GitHub lo cancela a los 30 minutos
+    timeout-minutes: 30
+    # steps: los pasos del trabajo, en orden. Cada paso empieza con "-".
+    # Si un paso falla, los siguientes no se ejecutan
+    steps:
+      # name: el titulo del paso, el que se ve en GitHub
+      - name: Descargar el repositorio
+        # uses: usa una action ya hecha. checkout copia el codigo del repositorio
+        # en la maquina. @v4 es la version de la action
+        uses: actions/checkout@v4
+
+
+      # Paso 2: instalar Python
+      - name: Instalar Python
+        # setup-python instala la version de Python que se le pida
+        uses: actions/setup-python@v5
+        # with: los datos que recibe la action
+        with:
+          # La version de Python: 3.11, la minima que pide el reto
+          python-version: "3.11"
+          # Guarda las librerias descargadas: desde la segunda vez, instala mas rapido
+          cache: pip
+
+
+      # Paso 3: instalar las librerias del proyecto
+      - name: Instalar librerias
+        # run: ejecuta un comando, igual que en la terminal
+        run: pip install -r requirements.txt
+
+
+      # Paso 4: capa bronce. Descarga XM, IDEAM y NOAA, y lee el Excel de EnerAndes
+      - name: Capa bronce (extraccion)
+        run: python -m src.pipeline
+
+
+      # Paso 5: capa plata. Limpia la hoja 2023 y la valida con pandera
+      - name: Capa plata (limpieza y pandera)
+        run: python -m src.silver.enerandes
+
+
+      # Paso 6: capa oro. Crea el esquema estrella y ejecuta las pruebas de dbt
+      - name: Capa oro (dbt build)
+        run: dbt build --project-dir dbt --profiles-dir dbt
+
+
+      # Paso 7: las pruebas de Python de la carpeta tests/
+      - name: Pruebas (pytest)
+        run: python -m pytest -v
+
+
+      # Paso 8: guarda las tablas de la capa oro en data/gold/*.parquet
+      - name: Exportar la capa oro
+        run: python -m src.exportar_oro
+
+
+      # Paso 9: publica la carpeta data/gold/ como artefacto de la ejecucion
+      - name: Publicar la capa oro
+        # upload-artifact comprime la carpeta en un .zip que se descarga desde GitHub
+        uses: actions/upload-artifact@v4
+        with:
+          # El nombre del .zip: capa-oro
+          name: capa-oro
+          # La carpeta que se guarda
+          path: data/gold/
+          # Cuantos dias guarda GitHub el artefacto antes de borrarlo
+          retention-days: 7
